@@ -21,7 +21,7 @@ interface CartItemsAmount {
   [key: number]: number;
 }
 
-export function Home() {
+export default function Home() {
   const [products, setProducts] = useState<ProductFormatted[]>([]);
   const { addProduct, cart } = useCart();
 

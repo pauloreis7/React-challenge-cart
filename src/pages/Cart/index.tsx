@@ -11,7 +11,7 @@ import { formatPrice } from '../../util/format';
 import { Container, ProductTable, Total } from './styles';
 
 
-export function Cart() {
+export default function Cart() {
   const { cart, removeProduct, updateProductAmount } = useCart();
 
   const cartFormatted = cart.map(product => {
